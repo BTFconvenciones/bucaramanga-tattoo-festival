@@ -7,7 +7,7 @@ function HeroButtons() {
         <div className={styles.buttons}>
 
             <a
-                href="https://wa.me/573058144929"
+                href="https://forms.gle/DiJSWe9DeNJE4Yxq7"
                 target="_blank"
                 rel="noreferrer"
                 className={styles.secondary}

@@ -1,5 +1,5 @@
 const links = {
-  tickets: "https://forms.gle/TU_FORMULARIO_TICKETS",
+  tickets: "https://forms.gle/DiJSWe9DeNJE4Yxq7",
 
   vip: "https://forms.gle/DiJSWe9DeNJE4Yxq7",
 
