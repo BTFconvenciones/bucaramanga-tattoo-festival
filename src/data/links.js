@@ -7,7 +7,7 @@ const links = {
 
   sponsor: "https://wa.me/573058144929?text=Hola,%20vengo%20desde%20la%20página%20web%20de%20Bucara%20GeekFest%20y%20quiero%20más%20información.",
 
-  tournaments: "https://forms.gle/528iHDF3h4q7pNDY9",
+  tournaments: "https://forms.gle/DiJSWe9DeNJE4Yxq7",
 
   cosplay: "https://forms.gle/528iHDF3h4q7pNDY9",
 
