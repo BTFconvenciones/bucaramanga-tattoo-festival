@@ -20,9 +20,9 @@ const tournaments = [
         title:"League of Legends",
         category:"MOBA",
         image:"/assets/tournaments/lol.png",
-        description:"Torneo 2v2.",
+        description:"Torneo 1v1.",
         prize:"proximamente bolsa de premios",
-        slots:"16 Equipos",
+        slots:"32 Jugadores",
         date:"proximamente mas información",
         status:"Abiertas",
         register:links.tournaments
@@ -82,10 +82,10 @@ const tournaments = [
 
     {
         id:7,
-        title:"Proximamente mas información",
-        category:"Trading Card Game",
-        image:"/assets/tournaments/pokemon-tcg.webp",
-        description:"Demuestra tu estrategia.",
+        title:"Naruto ninja storm 4",
+        category:"fighting",
+        image:"/assets/tournaments/naruto-ninja-storm-4.webp",
+        description:"Combate intenso 1 vs 1.",
         prize:"proximamente bolsa de premios",
         slots:"64 Jugadores",
         date:"proximamente mas información",
@@ -95,10 +95,10 @@ const tournaments = [
 
     {
         id:8,
-        title:"Proximamente mas información",
-        category:"Trading Card Game",
-        image:"/assets/tournaments/onepiece-tcg.webp",
-        description:"El mejor capitán gana.",
+        title:"Super smashs bros ultimate",
+        category:"fighting",
+        image:"/assets/tournaments/super-smash-bros-ultimate.webp",
+        description:"Combate intenso 1 vs 1.",
         prize:"proximamente bolsa de premios",
         slots:"64 Jugadores",
         date:"proximamente mas información",
@@ -112,6 +112,70 @@ const tournaments = [
         category:"Trading Card Game",
         image:"/assets/tournaments/yugioh.webp",
         description:"¡Es hora del duelo!",
+        prize:"proximamente bolsa de premios",
+        slots:"64 Jugadores",
+        date:"proximamente mas información",
+        status:"Abiertas",
+        register:links.tournaments
+    },
+    {
+        id:10,
+        title:"Super Smash Bros Ultimate",
+        category:"Fighting",
+        image:"/assets/tournaments/smashbros.webp",
+        description:"Combates 1 vs 1 al mejor nivel.",
+        prize:"proximamente bolsa de premios",
+        slots:"64 Jugadores",
+        date:"proximamente mas información",
+        status:"Abiertas",
+        register:links.tournaments
+    },
+
+    {
+        id:11,
+        title:"Mario Kart 8 Deluxe",
+        category:"Racing",
+        image:"/assets/tournaments/mariokart.webp",
+        description:"Velocidad, estrategia y diversión.",
+        prize:"proximamente bolsa de premios",
+        slots:"64 Jugadores",
+        date:"proximamente mas información",
+        status:"Abiertas",
+        register:links.tournaments
+    },
+
+    {
+        id:12,
+        title:"Free Fire",
+        category:"Battle Royale",
+        image:"/assets/tournaments/freefire.webp",
+        description:"Sobrevive y alcanza la victoria.",
+        prize:"proximamente bolsa de premios",
+        slots:"64 Jugadores",
+        date:"proximamente mas información",
+        status:"Abiertas",
+        register:links.tournaments
+    },
+
+    {
+        id:13,
+        title:"Brawl Stars",
+        category:"Mobile",
+        image:"/assets/tournaments/brawlstars.webp",
+        description:"Demuestra que eres la mejor escuadra.",
+        prize:"proximamente bolsa de premios",
+        slots:"64 Jugadores",
+        date:"proximamente mas información",
+        status:"Abiertas",
+        register:links.tournaments
+    },
+
+    {
+        id:14,
+        title:"Proximamente mas información",
+        category:"Trading Card Game",
+        image:"/assets/tournaments/lorcana.webp",
+        description:"Muy pronto anunciaremos este torneo.",
         prize:"proximamente bolsa de premios",
         slots:"64 Jugadores",
         date:"proximamente mas información",
