@@ -26,7 +26,6 @@ import Experience from "./sections/Experience/Experience";
 
 import Marquee from "./sections/Marquee/Marquee";
 
-import Gallery from "./sections/Gallery/Gallery";
 
 import Analytics from "./components/system/Analytics";
 
@@ -48,7 +47,6 @@ function App() {
 
         <Guests />
 
-        <Gallery />
 
         <Exhibitors />
 
