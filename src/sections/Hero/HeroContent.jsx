@@ -12,22 +12,22 @@ function HeroContent() {
     <div className={styles.content}>
 
       <span className={styles.badge}>
-        21 · 22 · 23 AGOSTO 2026
+        11 · 12 · 13 SEPTIEMBRE 2026
       </span>
 
-      <h1>
-        EL EVENTO GEEK
-        <br />
-        <span>MÁS GRANDE</span>
-        <br />
-        DEL NORORIENTE COLOMBIANO
-      </h1>
+      <div className={styles.logoWrapper}>
+        <img
+          src="/assets/logo/tattoo-festival.png"
+          alt="Bucaramanga Tattoo Festival 2026"
+          className={styles.logo}
+        />
+      </div>
 
       <p>
-        Tres días de videojuegos, anime, cosplay,
-        K-Pop, TCG, tecnología, invitados especiales,
-        competencias, experiencias inmersivas y una
-        comunidad que vive la cultura geek como nunca antes.
+        Tres días de arte, tatuaje y cultura alternativa,
+        con artistas nacionales e internacionales,
+        expositores, concursos, seminarios y experiencias
+        para los amantes del arte corporal y mucho más.
       </p>
 
       <HeroInfo />

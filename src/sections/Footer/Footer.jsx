@@ -4,99 +4,113 @@ import footer from "../../data/footer";
 
 function Footer() {
 
-  return (
+    return (
 
-    <footer className={styles.footer}>
+        <footer className={styles.footer}>
 
-      <div className={styles.container}>
+            <div className={styles.container}>
 
-        <div className={styles.top}>
+                <div className={styles.top}>
 
-          <div className={styles.brand}>
+                    <div className={styles.brand}>
 
-            <img
-              src="/assets/logo/logo.png"
-              alt="Bucara GeekFest"
-            />
+                        <img
+                            src="/assets/logo/tattoo-festival.png"
+                            alt="Bucaramanga Tattoo Festival 2026"
+                        />
 
-            <h2>
-              {footer.brand}
-            </h2>
+                        <h2>
+                            {footer.brand}
+                        </h2>
 
-            <p>
-              {footer.slogan}
-            </p>
+                        <p>
+                            {footer.slogan}
+                        </p>
 
-          </div>
+                    </div>
 
-          <div className={styles.info}>
 
-            <h3>
-              Evento
-            </h3>
+                    <div className={styles.info}>
 
-            <p>
-              {footer.dates}
-            </p>
+                        <h3>
+                            Festival
+                        </h3>
 
-            <p>
-              {footer.location}
-            </p>
+                        <p>
+                            {footer.dates}
+                        </p>
 
-          </div>
+                        <p>
+                            {footer.location}
+                        </p>
 
-          <div className={styles.contact}>
+                    </div>
 
-            <h3>
-              Contacto
-            </h3>
 
-            <p>
-              {footer.email}
-            </p>
+                    <div className={styles.contact}>
 
-            <p>
-              {footer.phone}
-            </p>
+                        <h3>
+                            Contacto
+                        </h3>
 
-          </div>
+                        <p>
+                            {footer.email}
+                        </p>
 
-          <div className={styles.social}>
+                        <p>
+                            {footer.phone}
+                        </p>
 
-            <h3>
-              Síguenos
-            </h3>
+                    </div>
 
-            {footer.social.map((item) => (
 
-              <a
-                key={item.id}
-                href={item.url}
-              >
-                {item.name}
-              </a>
+                    <div className={styles.social}>
 
-            ))}
+                        <h3>
+                            Síguenos
+                        </h3>
 
-          </div>
+                        {footer.social.map((item) => (
 
-        </div>
+                            item.url ? (
 
-        <div className={styles.bottom}>
+                                <a
+                                    key={item.id}
+                                    href={item.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {item.name}
+                                </a>
 
-          <p>
+                            ) : (
 
-            {footer.copyright}
+                                <span key={item.id}>
+                                    {item.name}
+                                </span>
 
-          </p>
+                            )
 
-        </div>
+                        ))}
 
-      </div>
+                    </div>
 
-    </footer>
+                </div>
 
-  );
+
+                <div className={styles.bottom}>
+
+                    <p>
+                        {footer.copyright}
+                    </p>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    );
 
 }
 

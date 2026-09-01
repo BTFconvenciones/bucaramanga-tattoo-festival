@@ -5,93 +5,90 @@ import links from "../../data/links";
 import SectionContainer from "../../components/ui/SectionContainer/SectionContainer";
 import SectionTitle from "../../components/ui/SectionTitle/SectionTitle";
 
+
 const registrations = [
-  {
-    id: 1,
-    title: "Registro general",
-    description:
-      "Recibe noticias, anuncios e información oficial del Bucara GeekFest.",
-    button: "Registrarme",
-    link: links.tickets,
-  },
-  {
-    id: 2,
-    title: "Inscripción a Torneos",
-    description:
-      "Consulta las categorías disponibles e inscríbete para competir.",
-    button: "Ir al formulario",
-    link: links.tournaments,
-  },
-  {
-    id: 3,
-    title: "Concurso Cosplay",
-    description:
-      "Participa con tu mejor cosplay y demuestra tu talento.",
-    button: "Inscribirme",
-    link: links.cosplay,
-  },
-  {
-    id: 4,
-    title: "Quiero ser Expositor",
-    description:
-      "Reserva un stand para mostrar y vender tus productos.",
-    button: "Solicitar Stand",
-    link: links.exhibitor,
-  },
-  {
-    id: 5,
-    title: "Quiero ser Patrocinador",
-    description:
-      "Conoce nuestros planes de patrocinio y haz crecer tu marca con nosotros.",
-    button: "Más información",
-    link: links.sponsor,
-  },
+    {
+        id:1,
+        title:"Comprar Entradas",
+        description:
+            "Asegura tu entrada y prepárate para vivir tres días de arte, tatuaje y cultura en Bucaramanga.",
+        button:"Comprar Entradas",
+        link:links.tickets,
+    },
+    {
+        id:2,
+        title:"Quiero ser Expositor",
+        description:
+            "Haz parte de nuestra zona comercial y presenta tu marca, productos o propuesta durante el festival.",
+        button:"Solicitar Stand",
+        link:links.exhibitor,
+    },
+    {
+        id:3,
+        title:"Quiero ser Patrocinador",
+        description:
+            "Conecta tu marca con el Bucaramanga Tattoo Festival y descubre nuestras opciones de participación.",
+        button:"Más información",
+        link:links.sponsor,
+    },
 ];
 
+
 function RegistrationHub() {
-  return (
-    <section className={styles.registration} id="registro">
 
-      <SectionContainer>
+    return (
 
-        <SectionTitle
-          badge="Centro de Inscripciones"
-          title="Todo comienza aquí"
-          subtitle="Selecciona la opción que mejor se adapte a ti y forma parte del Bucara GeekFest."
-        />
+        <section
+            className={styles.registration}
+            id="registro"
+        >
 
-        <div className={styles.grid}>
+            <SectionContainer>
 
-          {registrations.map((item) => (
+                <SectionTitle
+                    badge="Sé parte del festival"
+                    title="Vive el Bucaramanga Tattoo Festival"
+                    subtitle="Encuentra aquí las principales formas de participar y hacer parte de esta celebración del arte, el tatuaje y la cultura."
+                />
 
-            <article
-              key={item.id}
-              className={styles.card}
-            >
+                <div className={styles.grid}>
 
-              <h3>{item.title}</h3>
+                    {registrations.map((item) => (
 
-              <p>{item.description}</p>
+                        <article
+                            key={item.id}
+                            className={styles.card}
+                        >
 
-              <a
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.button}
-              >
-                {item.button}
-              </a>
+                            <h3>
+                                {item.title}
+                            </h3>
 
-            </article>
+                            <p>
+                                {item.description}
+                            </p>
 
-          ))}
+                            <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.button}
+                            >
+                                {item.button}
+                            </a>
 
-        </div>
+                        </article>
 
-      </SectionContainer>
+                    ))}
 
-    </section>
-  );
+                </div>
+
+            </SectionContainer>
+
+        </section>
+
+    );
+
 }
 
 export default RegistrationHub;

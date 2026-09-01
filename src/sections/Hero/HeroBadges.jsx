@@ -1,14 +1,14 @@
 import styles from "./HeroBadges.module.css";
 
 const badges = [
-    "🎮 Gaming",
-    "🎭 Cosplay",
-    "🎌 Anime",
-    "🎤 K-Pop",
-    "🃏 TCG",
-    "🎨 Artistas",
+    "🖋️ Tattoo",
+    "🎨 Arte",
+    "🦋 Cultura",
+    "👨‍🎨 Artistas",
+    "🏆 Competencias",
     "🛍️ Zona Comercial",
-    "💻 Tecnología"
+    "📚 Seminarios",
+    "🤝 Comunidad"
 ];
 
 function HeroBadges() {

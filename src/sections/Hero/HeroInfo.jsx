@@ -5,27 +5,27 @@ function HeroInfo() {
     const items = [
 
         {
-            icon:"📍",
-            title:"Neomundo",
-            text:"Bucaramanga"
+            icon: "📍",
+            title: "Neomundo",
+            text: "Bucaramanga"
         },
 
         {
-            icon:"📅",
-            title:"21 · 22 · 23",
-            text:"Agosto 2026"
+            icon: "📅",
+            title: "11 · 12 · 13",
+            text: "Septiembre 2026"
         },
 
         {
-            icon:"🎮",
-            title:"10+",
-            text:"Torneos"
+            icon: "🖋️",
+            title: "Artistas",
+            text: "Nacionales e internacionales"
         },
 
         {
-            icon:"👥",
-            title:"Invitados",
-            text:"Especiales"
+            icon: "🎨",
+            title: "Tattoo",
+            text: "Cultura y arte"
         }
 
     ];
@@ -34,7 +34,7 @@ function HeroInfo() {
 
         <div className={styles.info}>
 
-            {items.map((item,index)=>(
+            {items.map((item, index) => (
 
                 <div
                     key={index}

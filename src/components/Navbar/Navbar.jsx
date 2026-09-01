@@ -1,15 +1,23 @@
 import { useState } from "react";
+
 import styles from "./Navbar.module.css";
+
 import links from "../../data/links";
+
 import Button from "../Button/Button";
+
 
 function Navbar() {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
+
     const closeMenu = () => {
+
         setMenuOpen(false);
+
     };
+
 
     return (
 
@@ -17,40 +25,69 @@ function Navbar() {
 
             <div className={styles.container}>
 
+
+                {/* ========================= */}
+                {/* LOGO */}
+                {/* ========================= */}
+
                 <a
                     href="#inicio"
                     className={styles.logo}
                     onClick={closeMenu}
                 >
+
                     <img
-                        src="/assets/logo/logo.png"
-                        alt="Bucara GeekFest"
+                        src="/assets/logo/tattoo-festival.png"
+                        alt="Bucaramanga Tattoo Festival 2026"
                     />
+
                 </a>
 
-                {/* =====================
-                    MENÚ ESCRITORIO
-                ====================== */}
+
+                {/* ========================= */}
+                {/* MENÚ DESKTOP */}
+                {/* ========================= */}
 
                 <nav className={styles.menu}>
 
-                    <a href="#inicio">Inicio</a>
+                    <a href="#inicio">
+                        Inicio
+                    </a>
 
-                    <a href="#experience">Experiencia</a>
+                    <a href="#invitados">
+                        Artistas
+                    </a>
 
-                    <a href="#invitados">Invitados</a>
+                    <a href="#participantes">
+                        Participantes
+                    </a>
 
-                    <a href="#zona-comercial">Expositores</a>
+                    <a href="#zona-comercial">
+                        Expositores
+                    </a>
 
-                    <a href="#torneos">Torneos</a>
+                    <a href="#torneos">
+                        BGA Tattoo Geek
+                    </a>
 
-                    <a href="#agenda">Agenda</a>
+                    <a href="#agenda">
+                        Agenda
+                    </a>
 
-                    <a href="#patrocinadores">Sponsors</a>
+                    <a href="#patrocinadores">
+                        Aliados
+                    </a>
 
-                    <a href="#faq">FAQ</a>
+                    <a href="#faq">
+                        FAQ
+                    </a>
 
                 </nav>
+
+
+                {/* ========================= */}
+                {/* BOTONES DESKTOP */}
+                {/* ========================= */}
 
                 <div className={styles.actions}>
 
@@ -63,89 +100,132 @@ function Navbar() {
                         Quiero ser Expositor
                     </Button>
 
+
                     <Button
-                        href={links.vip}
+                        href={links.tickets}
                         target="_blank"
                         rel="noopener noreferrer"
                         variant="secondary"
                     >
-                        Quiero Pase VIP
+                        Comprar Entradas
                     </Button>
-
-                    
 
                 </div>
 
-                {/* =====================
-                    BOTÓN HAMBURGUESA
-                ====================== */}
+
+                {/* ========================= */}
+                {/* HAMBURGUESA */}
+                {/* ========================= */}
 
                 <button
                     className={styles.hamburger}
                     onClick={() => setMenuOpen(!menuOpen)}
-                    aria-label="Abrir menú"
+                    aria-label={
+                        menuOpen
+                            ? "Cerrar menú"
+                            : "Abrir menú"
+                    }
+                    aria-expanded={menuOpen}
                 >
 
                     <span></span>
-
                     <span></span>
-
                     <span></span>
 
                 </button>
 
             </div>
 
-            {/* =====================
-                MENÚ MÓVIL
-            ====================== */}
+
+            {/* ========================= */}
+            {/* MENÚ MÓVIL */}
+            {/* ========================= */}
 
             <div
-                className={`${styles.mobileMenu} ${menuOpen ? styles.show : ""}`}
+                className={`
+                    ${styles.mobileMenu}
+                    ${menuOpen ? styles.show : ""}
+                `}
             >
 
                 <button
                     className={styles.close}
                     onClick={closeMenu}
+                    aria-label="Cerrar menú"
                 >
                     ✕
                 </button>
 
-                <a href="#inicio" onClick={closeMenu}>Inicio</a>
 
-                <a href="#experience" onClick={closeMenu}>Experiencia</a>
+                <a
+                    href="#inicio"
+                    onClick={closeMenu}
+                >
+                    Inicio
+                </a>
 
-                <a href="#invitados" onClick={closeMenu}>Invitados</a>
 
-                <a href="#zona-comercial" onClick={closeMenu}>Expositores</a>
+                <a
+                    href="#invitados"
+                    onClick={closeMenu}
+                >
+                    Artistas
+                </a>
 
-                <a href="#torneos" onClick={closeMenu}>Torneos</a>
 
-                <a href="#agenda" onClick={closeMenu}>Agenda</a>
+                <a
+                    href="#participantes"
+                    onClick={closeMenu}
+                >
+                    Participantes
+                </a>
 
-                <a href="#patrocinadores" onClick={closeMenu}>Sponsors</a>
 
-                <a href="#faq" onClick={closeMenu}>FAQ</a>
+                <a
+                    href="#zona-comercial"
+                    onClick={closeMenu}
+                >
+                    Expositores
+                </a>
+
+
+                <a
+                    href="#torneos"
+                    onClick={closeMenu}
+                >
+                    BGA Tattoo Geek
+                </a>
+
+
+                <a
+                    href="#agenda"
+                    onClick={closeMenu}
+                >
+                    Agenda
+                </a>
+
+
+                <a
+                    href="#patrocinadores"
+                    onClick={closeMenu}
+                >
+                    Aliados
+                </a>
+
+
+                <a
+                    href="#faq"
+                    onClick={closeMenu}
+                >
+                    FAQ
+                </a>
+
+
+                {/* ========================= */}
+                {/* BOTONES MÓVILES */}
+                {/* ========================= */}
 
                 <div className={styles.mobileButtons}>
-
-                    <Button
-                        href={links.tickets}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        variant="primary"
-                    >
-                        Comprar Tickets
-                    </Button>
-
-                    <Button
-                        href={links.vip}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        variant="secondary"
-                    >
-                        Pase VIP
-                    </Button>
 
                     <Button
                         href={links.exhibitor}
@@ -154,6 +234,16 @@ function Navbar() {
                         variant="ghost"
                     >
                         Quiero ser Expositor
+                    </Button>
+
+
+                    <Button
+                        href={links.tickets}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        variant="secondary"
+                    >
+                        Comprar Entradas
                     </Button>
 
                 </div>
@@ -165,5 +255,6 @@ function Navbar() {
     );
 
 }
+
 
 export default Navbar;

@@ -4,35 +4,38 @@ function Marquee() {
 
     const text = [
 
-        "🎮 VIDEOJUEGOS",
+        "🖋️ TATUAJE",
 
-        "🏆 ESPORTS",
+        "🎨 ARTE",
 
-        "🎭 COSPLAY",
+        "🦋 CULTURA",
 
-        "🎤 K-POP",
+        "🖋️ ARTISTAS",
 
-        "🃏 TCG",
+        "🏆 COMPETENCIAS",
 
-        "👾 FREE PLAY",
-
-        "🎨 ARTISTAS",
+        "📚 SEMINARIOS",
 
         "🛍️ EXHIBIDORES",
+
+        "🤝 COMUNIDAD",
 
         "⭐ INVITADOS"
 
     ];
 
-    const items = [...text,...text];
+    const items = [...text, ...text];
 
     return (
 
-        <section className={styles.marquee}>
+        <section
+            className={styles.marquee}
+            aria-label="Bucaramanga Tattoo Festival"
+        >
 
             <div className={styles.track}>
 
-                {items.map((item,index)=>(
+                {items.map((item, index) => (
 
                     <span key={index}>
                         {item}

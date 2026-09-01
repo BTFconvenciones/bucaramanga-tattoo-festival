@@ -1,14 +1,70 @@
 .sponsors{
 
+    position:relative;
+
     padding:120px 20px;
 
-    background:#070B14;
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(183,108,48,.08),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(212,178,106,.05),
+            transparent 35%
+        ),
+        #0C0A08;
+
+    overflow:hidden;
 
 }
 
+
+/* ========================= */
+/* TEXTURA */
+/* ========================= */
+
+.sponsors::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+        linear-gradient(
+            rgba(244,232,208,.012) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(244,232,208,.012) 1px,
+            transparent 1px
+        );
+
+    background-size:60px 60px;
+
+    opacity:.18;
+
+    pointer-events:none;
+
+}
+
+
+/* ========================= */
+/* CONTENEDOR */
+/* ========================= */
+
 .container{
 
-    max-width:1300px;
+    position:relative;
+
+    z-index:2;
+
+    width:min(1300px,94%);
 
     margin:auto;
 
@@ -16,197 +72,625 @@
 
 }
 
+
+/* ========================= */
+/* ENCABEZADO */
+/* ========================= */
+
+.header{
+
+    max-width:850px;
+
+    margin:0 auto 70px;
+
+}
+
+
 .badge{
 
-    display:inline-block;
+    display:inline-flex;
 
-    padding:10px 20px;
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 22px;
 
     border-radius:999px;
 
-    background:rgba(0,229,255,.08);
+    background:rgba(183,108,48,.10);
 
-    border:1px solid rgba(0,229,255,.2);
+    border:1px solid rgba(212,178,106,.30);
 
-    color:var(--color-primary);
+    color:#D4B26A;
 
     margin-bottom:25px;
 
-    font-weight:600;
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
 
 }
+
 
 .container h2{
 
-    font-size:clamp(2rem,5vw,3.5rem);
+    font-family:"Bebas Neue",sans-serif;
 
-    margin-bottom:20px;
+    font-size:clamp(3rem,6vw,5rem);
+
+    line-height:1;
+
+    margin:0 0 22px;
+
+    color:#F4E8D0;
 
 }
 
-.container p{
+
+.description{
 
     max-width:760px;
 
     margin:auto;
 
-    color:var(--color-text-soft);
+    color:#CFC3AE;
+
+    font-size:1.05rem;
 
     line-height:1.8;
 
 }
 
-.title{
 
-    margin-top:70px;
+/* ========================= */
+/* SECCIONES */
+/* ========================= */
 
-    margin-bottom:35px;
+.section{
 
-    color:white;
-
-    font-size:1.8rem;
-
-}
-
-/* Sponsors */
-
-.gridSponsors{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:35px;
-
-    margin-bottom:70px;
+    margin-top:65px;
 
 }
 
-/* Aliados */
 
-.gridAllies{
+.section + .section{
 
-    display:grid;
-
-    grid-template-columns:repeat(5,1fr);
-
-    gap:25px;
+    margin-top:100px;
 
 }
 
-/* Tarjetas */
 
-.card{
+/* ========================= */
+/* TÍTULO DE SECCIÓN */
+/* ========================= */
+
+.titleRow{
 
     display:flex;
 
-    flex-direction:column;
+    align-items:center;
 
     justify-content:center;
 
-    align-items:center;
+    gap:20px;
+
+    margin-bottom:35px;
+
+}
+
+
+.titleRow h3{
+
+    margin:0;
+
+    color:#D4B26A;
+
+    font-size:1.15rem;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    white-space:nowrap;
+
+}
+
+
+.line{
+
+    width:70px;
+
+    height:1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(212,178,106,.55)
+        );
+
+}
+
+
+.titleRow .line:last-child{
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(212,178,106,.55),
+            transparent
+        );
+
+}
+
+
+/* ========================= */
+/* GRID DE LOGOS */
+/* ========================= */
+
+.logoGrid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+/* ========================= */
+/* ENLACE */
+/* ========================= */
+
+.logoLink{
+
+    display:block;
 
     text-decoration:none;
 
-    padding:35px;
-
-    min-height:220px;
-
-    border-radius:22px;
-
-    background:rgba(255,255,255,.05);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    transition:.35s;
-
-    backdrop-filter:blur(15px);
+    color:inherit;
 
 }
 
-.card:hover{
 
-    transform:translateY(-10px);
+/* ========================= */
+/* TARJETA DEL LOGO */
+/* ========================= */
 
-    border-color:rgba(0,229,255,.45);
+.logoCard{
 
-    box-shadow:
-
-        0 0 35px rgba(0,229,255,.18);
-
-}
-
-.card img{
+    position:relative;
 
     width:100%;
 
-    max-width:180px;
+    height:155px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(36,29,22,.78),
+            rgba(17,14,11,.90)
+        );
+
+    border:1px solid rgba(212,178,106,.12);
+
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+    overflow:hidden;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+
+}
+
+
+/* ========================= */
+/* BRILLO INTERNO */
+/* ========================= */
+
+.logoCard::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(183,108,48,.08),
+            transparent 65%
+        );
+
+    opacity:.65;
+
+    pointer-events:none;
+
+}
+
+
+.logoCard::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:80%;
+
+    height:100%;
+
+    background:
+        linear-gradient(
+            100deg,
+            transparent,
+            rgba(212,178,106,.08),
+            transparent
+        );
+
+    transform:skewX(-18deg);
+
+    transition:left .8s ease;
+
+    pointer-events:none;
+
+}
+
+
+/* ========================= */
+/* HOVER */
+/* ========================= */
+
+.logoLink:hover .logoCard{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(212,178,106,.38);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(48,36,27,.88),
+            rgba(17,14,11,.94)
+        );
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.35),
+        0 0 24px rgba(183,108,48,.07);
+
+}
+
+
+.logoLink:hover .logoCard::after{
+
+    left:140%;
+
+}
+
+
+/* ========================= */
+/* IMAGEN */
+/* ========================= */
+
+.logoWrapper{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.logoWrapper img{
+
+    display:block;
+
+    width:auto;
+
+    height:auto;
+
+    max-width:100%;
+
+    max-height:100px;
 
     object-fit:contain;
 
-    transition:.35s;
+    transition:
+        transform .35s ease,
+        filter .35s ease;
 
 }
 
-.card:hover img{
 
-    transform:scale(1.08);
+/* ========================= */
+/* HOVER DEL LOGO */
+/* ========================= */
 
-}
+.logoLink:hover .logoWrapper img{
 
-.card h3{
+    transform:scale(1.06);
 
-    margin-top:25px;
-
-    color:white;
-
-    font-size:1rem;
-
-    font-weight:600;
-
-    text-align:center;
+    filter:
+        drop-shadow(
+            0 0 12px
+            rgba(212,178,106,.18)
+        );
 
 }
 
-/* Responsive */
 
-@media(max-width:1000px){
+/* ========================= */
+/* PATROCINADORES */
+/* ========================= */
 
-    .gridSponsors{
+.section:first-of-type .logoCard{
 
-        grid-template-columns:repeat(2,1fr);
+    height:165px;
+
+    border-color:rgba(212,178,106,.16);
+
+}
+
+
+.section:first-of-type .logoWrapper img{
+
+    max-height:105px;
+
+}
+
+
+/* ========================= */
+/* ALIADOS */
+/* ========================= */
+
+.section + .section .logoCard{
+
+    height:145px;
+
+}
+
+
+.section + .section .logoWrapper img{
+
+    max-height:90px;
+
+}
+
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media(max-width:1050px){
+
+    .logoGrid{
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+        gap:18px;
 
     }
 
-    .gridAllies{
 
-        grid-template-columns:repeat(3,1fr);
+    .container{
+
+        width:min(1100px,94%);
+
+    }
+
+}
+
+
+/* ========================= */
+/* TABLET PEQUEÑO */
+/* ========================= */
+
+@media(max-width:800px){
+
+    .sponsors{
+
+        padding:90px 20px;
+
+    }
+
+
+    .header{
+
+        margin-bottom:50px;
+
+    }
+
+
+    .logoGrid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap:16px;
+
+    }
+
+
+    .logoCard{
+
+        height:150px;
+
+    }
+
+
+    .section:first-of-type .logoCard{
+
+        height:155px;
+
+    }
+
+
+    .titleRow{
+
+        gap:14px;
+
+    }
+
+
+    .titleRow h3{
+
+        font-size:1rem;
+
+        letter-spacing:2px;
+
+    }
+
+
+    .line{
+
+        width:45px;
 
     }
 
 }
 
-@media(max-width:700px){
 
-    .gridSponsors{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .gridAllies{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-}
+/* ========================= */
+/* MOBILE */
+/* ========================= */
 
 @media(max-width:500px){
 
-    .gridAllies{
+    .sponsors{
+
+        padding:80px 16px;
+
+    }
+
+
+    .container{
+
+        width:100%;
+
+    }
+
+
+    .container h2{
+
+        font-size:
+            clamp(
+                2.7rem,
+                12vw,
+                4rem
+            );
+
+    }
+
+
+    .description{
+
+        font-size:.98rem;
+
+    }
+
+
+    .logoGrid{
 
         grid-template-columns:1fr;
+
+        gap:14px;
+
+    }
+
+
+    .logoCard{
+
+        height:140px;
+
+        padding:20px;
+
+    }
+
+
+    .section:first-of-type .logoCard{
+
+        height:145px;
+
+    }
+
+
+    .section + .section{
+
+        margin-top:75px;
+
+    }
+
+
+    .titleRow{
+
+        gap:10px;
+
+    }
+
+
+    .titleRow h3{
+
+        font-size:.88rem;
+
+        letter-spacing:1.5px;
+
+    }
+
+
+    .line{
+
+        width:30px;
+
+    }
+
+
+    .logoWrapper img{
+
+        max-height:90px;
+
+    }
+
+
+    .section:first-of-type .logoWrapper img{
+
+        max-height:95px;
 
     }
 

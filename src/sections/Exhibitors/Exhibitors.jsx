@@ -6,6 +6,7 @@ import exhibitors from "../../data/exhibitors";
 
 import SearchBar from "@/components/SearchBar/SearchBar";
 
+
 function Exhibitors() {
 
     const [search, setSearch] = useState("");
@@ -14,13 +15,6 @@ function Exhibitors() {
         item.name.toLowerCase().includes(search.toLowerCase())
     );
 
-    // Divide automáticamente los expositores
-    const firstRow = exhibitors.filter((_, index) => index % 2 === 0);
-    const secondRow = exhibitors.filter((_, index) => index % 2 !== 0);
-
-    // Duplica cada fila para el efecto infinito
-    const rowOne = [...firstRow, ...firstRow];
-    const rowTwo = [...secondRow, ...secondRow];
 
     function Profile({ item }) {
 
@@ -33,23 +27,36 @@ function Exhibitors() {
                 className={styles.profile}
             >
 
-                <img
-                    src={item.image}
-                    alt={item.name}
-                    className={styles.logo}
-                />
+                <div className={styles.imageWrapper}>
 
-                <h3>{item.name}</h3>
+                    <img
+                        src={item.image}
+                        alt={item.name}
+                        className={styles.logo}
+                        loading="lazy"
+                    />
 
-                <span>
-                    Visitar Instagram →
-                </span>
+                </div>
+
+
+                <div className={styles.info}>
+
+                    <h3>
+                        {item.name}
+                    </h3>
+
+                    <span>
+                        Visitar Instagram →
+                    </span>
+
+                </div>
 
             </a>
 
         );
 
     }
+
 
     return (
 
@@ -69,9 +76,10 @@ function Exhibitors() {
                 </h2>
 
                 <p className={styles.description}>
-                    Descubre las marcas, tiendas y emprendimientos
-                    que harán parte del Bucara GeekFest.
+                    Descubre estudios, marcas, artistas, emprendimientos
+                    y propuestas que harán parte del Bucaramanga Tattoo Festival.
                 </p>
+
 
                 <SearchBar
                     value={search}
@@ -80,45 +88,21 @@ function Exhibitors() {
 
             </div>
 
+
             {search === "" ? (
 
-                <>
+                <div className={styles.exhibitorGrid}>
 
-                    <div className={styles.slider}>
+                    {exhibitors.map((item) => (
 
-                        <div className={styles.track}>
+                        <Profile
+                            key={item.id}
+                            item={item}
+                        />
 
-                            {rowOne.map((item, index) => (
+                    ))}
 
-                                <Profile
-                                    key={`top-${index}`}
-                                    item={item}
-                                />
-
-                            ))}
-
-                        </div>
-
-                    </div>
-
-                    <div className={styles.slider}>
-
-                        <div className={styles.trackReverse}>
-
-                            {rowTwo.map((item, index) => (
-
-                                <Profile
-                                    key={`bottom-${index}`}
-                                    item={item}
-                                />
-
-                            ))}
-
-                        </div>
-
-                    </div>
-
-                </>
+                </div>
 
             ) : (
 
@@ -138,9 +122,7 @@ function Exhibitors() {
                     ) : (
 
                         <p className={styles.empty}>
-
                             No encontramos expositores con ese nombre.
-
                         </p>
 
                     )}
@@ -154,5 +136,6 @@ function Exhibitors() {
     );
 
 }
+
 
 export default Exhibitors;

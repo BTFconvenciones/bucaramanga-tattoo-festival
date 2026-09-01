@@ -1,4 +1,5 @@
 import styles from "./Sponsors.module.css";
+
 import sponsors from "../../data/sponsors";
 
 function Sponsors() {
@@ -11,31 +12,45 @@ function Sponsors() {
         (item) => item.type === "ally"
     );
 
-    function Card({ item }) {
+
+    function Logo({ item }) {
+
+        const content = (
+            <div className={styles.logoCard}>
+
+                <div className={styles.logoWrapper}>
+
+                    <img
+                        src={item.image}
+                        alt={item.name}
+                        loading="lazy"
+                    />
+
+                </div>
+
+            </div>
+        );
+
+
+        if (!item.link) {
+            return content;
+        }
+
 
         return (
-
             <a
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.card}
+                className={styles.logoLink}
+                aria-label={`Visitar ${item.name}`}
             >
-
-                <img
-                    src={item.image}
-                    alt={item.name}
-                />
-
-                <h3>
-                    {item.name}
-                </h3>
-
+                {content}
             </a>
-
         );
 
     }
+
 
     return (
 
@@ -46,60 +61,104 @@ function Sponsors() {
 
             <div className={styles.container}>
 
-                <span className={styles.badge}>
-                    Patrocinadores & Aliados
-                </span>
+                {/* ========================= */}
+                {/* ENCABEZADO */}
+                {/* ========================= */}
 
-                <h2>
+                <div className={styles.header}>
 
-                    Gracias por creer en Bucara GeekFest
+                    <span className={styles.badge}>
+                        Patrocinadores
+                    </span>
 
-                </h2>
+                    <h2>
+                        Quienes hacen posible el festival
+                    </h2>
 
-                <p>
-
-                    Empresas, marcas y aliados que hacen posible
-                    esta experiencia para toda la comunidad geek.
-
-                </p>
-
-                <h3 className={styles.title}>
-
-                    PATROCINADORES OFICIALES
-
-                </h3>
-
-                <div className={styles.gridSponsors}>
-
-                    {sponsorsOfficial.map((item)=>(
-
-                        <Card
-                            key={item.id}
-                            item={item}
-                        />
-
-                    ))}
+                    <p className={styles.description}>
+                        Marcas, empresas y organizaciones que hacen parte
+                        del Bucaramanga Tattoo Festival 2026.
+                    </p>
 
                 </div>
 
-                <h3 className={styles.title}>
 
-                    APOYAN
+                {/* ========================= */}
+                {/* PATROCINADORES */}
+                {/* ========================= */}
 
-                </h3>
+                {sponsorsOfficial.length > 0 && (
 
-                <div className={styles.gridAllies}>
+                    <div className={styles.section}>
 
-                    {allies.map((item)=>(
+                        <div className={styles.titleRow}>
 
-                        <Card
-                            key={item.id}
-                            item={item}
-                        />
+                            <span className={styles.line}></span>
 
-                    ))}
+                            <h3>
+                                PATROCINADORES
+                            </h3>
 
-                </div>
+                            <span className={styles.line}></span>
+
+                        </div>
+
+
+                        <div className={styles.logoGrid}>
+
+                            {sponsorsOfficial.map((item) => (
+
+                                <Logo
+                                    key={item.id}
+                                    item={item}
+                                />
+
+                            ))}
+
+                        </div>
+
+                    </div>
+
+                )}
+
+
+                {/* ========================= */}
+                {/* ALIADOS */}
+                {/* ========================= */}
+
+                {allies.length > 0 && (
+
+                    <div className={styles.section}>
+
+                        <div className={styles.titleRow}>
+
+                            <span className={styles.line}></span>
+
+                            <h3>
+                                ALIADOS
+                            </h3>
+
+                            <span className={styles.line}></span>
+
+                        </div>
+
+
+                        <div className={styles.logoGrid}>
+
+                            {allies.map((item) => (
+
+                                <Logo
+                                    key={item.id}
+                                    item={item}
+                                />
+
+                            ))}
+
+                        </div>
+
+                    </div>
+
+                )}
 
             </div>
 

@@ -14,12 +14,13 @@
 
     transform:scale(1);
 
-    opacity:.45;
+    opacity:.38;
 
     filter:
-        brightness(.65)
-        contrast(1.05)
-        saturate(1.05);
+        brightness(.42)
+        contrast(1.08)
+        saturate(.65)
+        sepia(.18);
 
     z-index:1;
 
@@ -36,17 +37,26 @@
     z-index:2;
 
     background:
-        radial-gradient(circle at top left,
-            rgba(111,0,255,.18),
-            transparent 40%
-        ),
-        radial-gradient(circle at top right,
-            rgba(0,229,255,.14),
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(183,108,48,.20),
             transparent 38%
         ),
-        radial-gradient(circle at bottom center,
-            rgba(255,45,166,.10),
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(183,145,76,.12),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(93,82,58,.12),
             transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(23,21,18,.48) 0%,
+            rgba(33,29,23,.52) 45%,
+            rgba(12,11,9,.62) 100%
         );
 
 }
@@ -60,12 +70,19 @@
     inset:0;
 
     background-image:
-        linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
+        linear-gradient(
+            rgba(244,232,208,.018) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(244,232,208,.018) 1px,
+            transparent 1px
+        );
 
     background-size:60px 60px;
 
-    opacity:.18;
+    opacity:.12;
 
 }
 
@@ -78,9 +95,11 @@
     inset:0;
 
     background:
-        radial-gradient(circle,
-        transparent 55%,
-        rgba(0,0,0,.35) 100%);
+        radial-gradient(
+            circle,
+            transparent 48%,
+            rgba(0,0,0,.62) 100%
+        );
 
 }
 
@@ -94,9 +113,9 @@
 
     border-radius:50%;
 
-    background:#6F00FF;
+    background:#B76C30;
 
-    opacity:.18;
+    opacity:.10;
 
     filter:blur(180px);
 
@@ -120,9 +139,9 @@
 
     border-radius:50%;
 
-    background:#00E5FF;
+    background:#D4B26A;
 
-    opacity:.16;
+    opacity:.08;
 
     filter:blur(170px);
 
@@ -146,9 +165,9 @@
 
     border-radius:50%;
 
-    background:#FF2DAA;
+    background:#7C4735;
 
-    opacity:.12;
+    opacity:.08;
 
     filter:blur(160px);
 
@@ -174,9 +193,9 @@
 
     background:
         linear-gradient(
-            rgba(3,5,12,.18),
-            rgba(3,5,12,.38),
-            rgba(3,5,12,.68)
+            rgba(12,10,8,.18),
+            rgba(12,10,8,.42),
+            rgba(8,7,6,.82)
         );
 
 }

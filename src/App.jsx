@@ -4,13 +4,15 @@ import Navbar from "./components/Navbar";
 
 import Hero from "./sections/Hero/Hero";
 
+import Marquee from "./sections/Marquee/Marquee";
+
 import Guests from "./sections/Guests/Guests";
+
+import Participants from "./sections/Participants/Participants";
 
 import Exhibitors from "./sections/Exhibitors/Exhibitors";
 
 import Tournaments from "./sections/Tournaments/Tournaments";
-
-import BannerCTA from "./sections/BannerCTA/BannerCTA";
 
 import RegistrationHub from "./sections/RegistrationHub/RegistrationHub";
 
@@ -22,52 +24,49 @@ import Faq from "./sections/Faq/Faq";
 
 import Footer from "./sections/Footer/Footer";
 
-import Experience from "./sections/Experience/Experience";
-
-import Marquee from "./sections/Marquee/Marquee";
-
-
 import Analytics from "./components/system/Analytics";
 
+
 function App() {
-  return (
-    <div className="app">
 
-      <Analytics />
+    return (
 
-      <Navbar />
+        <div className="app">
 
-      <main className="main-layout">
+            <Analytics />
 
-        <Hero />
+            <Navbar />
 
-        <Marquee />
+            <main className="main-layout">
 
-        <Sponsors />
+                <Hero />
 
-        <Guests />
+                <Marquee />
 
+                <Guests />
 
-        <Exhibitors />
+                <Participants />
 
-        <BannerCTA />
+                <Exhibitors />
 
-        <Tournaments />
+                <Tournaments />
 
-         <Experience />
+                <RegistrationHub />
 
-        <RegistrationHub />
+                <Schedule />
 
-        <Schedule />
+                <Sponsors />
 
-        <Faq />
+                <Faq />
 
-      </main>
+            </main>
 
-      <Footer />
+            <Footer />
 
-    </div>
-  );
+        </div>
+
+    );
+
 }
 
 export default App;

@@ -22,13 +22,16 @@
 
     padding:28px 22px;
 
-    border-radius:24px;
+    border-radius:18px;
 
-    background:rgba(255,255,255,.05);
+    background:rgba(20,16,12,.72);
 
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(218,170,91,.22);
 
     backdrop-filter:blur(18px);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.22);
 
     transition:
         transform .35s ease,
@@ -48,7 +51,7 @@
     background:linear-gradient(
         120deg,
         transparent,
-        rgba(255,255,255,.08),
+        rgba(218,170,91,.10),
         transparent
     );
 
@@ -68,10 +71,11 @@
 
     transform:translateY(-8px);
 
-    border-color:rgba(0,229,255,.35);
+    border-color:rgba(218,170,91,.55);
 
     box-shadow:
-        0 0 35px rgba(0,229,255,.18);
+        0 15px 40px rgba(0,0,0,.35),
+        0 0 28px rgba(218,170,91,.10);
 
 }
 
@@ -85,7 +89,7 @@
 
 .card h3{
 
-    color:white;
+    color:#F4E8D0;
 
     font-size:1.4rem;
 
@@ -97,7 +101,7 @@
 
 .card span{
 
-    color:var(--color-text-soft);
+    color:#CFC3AE;
 
     font-size:.95rem;
 

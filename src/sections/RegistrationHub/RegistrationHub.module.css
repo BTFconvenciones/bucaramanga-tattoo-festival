@@ -1,73 +1,391 @@
 .registration{
+    position:relative;
+
     padding:120px 20px;
-    background:#05070D;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(183,108,48,.08),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(212,178,106,.05),
+            transparent 35%
+        ),
+        #0C0A08;
+
+    overflow:hidden;
+}
+
+.registration::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background-image:
+        linear-gradient(
+            rgba(244,232,208,.012) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(244,232,208,.012) 1px,
+            transparent 1px
+        );
+
+    background-size:60px 60px;
+
+    opacity:.18;
+
+    pointer-events:none;
 }
 
 .container{
+    position:relative;
+    z-index:2;
+
     max-width:1200px;
+
     margin:auto;
+
     text-align:center;
 }
 
 .badge{
-    display:inline-block;
-    padding:10px 20px;
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:10px 22px;
+
     border-radius:999px;
-    background:rgba(111,0,255,.15);
-    color:#A855F7;
+
+    background:rgba(183,108,48,.10);
+
+    border:1px solid rgba(212,178,106,.28);
+
+    color:#D4B26A;
+
     margin-bottom:20px;
+
+    font-weight:700;
+
+    letter-spacing:1.2px;
+
+    text-transform:uppercase;
 }
 
 .container h2{
     font-size:clamp(2rem,5vw,3.5rem);
+
     margin-bottom:20px;
+
+    color:#F4E8D0;
+
+    line-height:1.08;
 }
 
 .description{
     max-width:700px;
+
     margin:auto;
-    color:#CFCFCF;
+
+    color:#CFC3AE;
+
+    line-height:1.8;
 }
 
+/* ----------------------- */
+/* TARJETAS */
+/* ----------------------- */
+
 .grid{
+    position:relative;
+
     margin-top:60px;
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0,1fr)
+        );
+
     gap:30px;
 }
 
 .card{
-    background:rgba(255,255,255,.05);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:20px;
-    padding:35px 25px;
-    transition:.3s;
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    min-height:270px;
+
+    padding:35px 28px;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(36,29,22,.90),
+            rgba(14,12,10,.96)
+        );
+
+    border:1px solid rgba(212,178,106,.16);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.28);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+.card::before{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent 20%,
+            rgba(212,178,106,.08),
+            transparent 80%
+        );
+
+    transform:translateX(-120%);
+
+    transition:transform .8s ease;
+
+    pointer-events:none;
+}
+
+.card:hover::before{
+    transform:translateX(120%);
 }
 
 .card:hover{
     transform:translateY(-8px);
+
+    border-color:rgba(212,178,106,.42);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.38),
+        0 0 28px rgba(212,178,106,.08);
 }
+
+/* ----------------------- */
+/* ENTRADA PRINCIPAL */
+/* ----------------------- */
+
+.card:first-child{
+    border-color:rgba(212,178,106,.34);
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(183,108,48,.14),
+            transparent 55%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(46,34,24,.95),
+            rgba(15,12,10,.98)
+        );
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.35),
+        0 0 30px rgba(183,108,48,.06);
+}
+
+.card:first-child::after{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:12%;
+
+    width:76%;
+    height:1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(212,178,106,.65),
+            transparent
+        );
+
+    opacity:.8;
+}
+
+/* ----------------------- */
+/* TITULO */
+/* ----------------------- */
 
 .card h3{
+    position:relative;
+    z-index:1;
+
     margin-bottom:15px;
+
+    color:#F4E8D0;
+
+    font-size:1.45rem;
+
+    line-height:1.2;
 }
+
+/* ----------------------- */
+/* TEXTO */
+/* ----------------------- */
 
 .card p{
-    color:#BDBDBD;
+    position:relative;
+    z-index:1;
+
+    color:#CFC3AE;
+
     margin-bottom:30px;
-    line-height:1.6;
+
+    line-height:1.65;
 }
 
+/* ----------------------- */
+/* BOTÓN */
+/* ----------------------- */
+
 .button{
-    display:inline-block;
-    padding:12px 28px;
+    position:relative;
+    z-index:1;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    padding:13px 24px;
+
     border-radius:999px;
-    background:#6F00FF;
-    color:white;
-    font-weight:600;
-    transition:.3s;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8C4E2F,
+            #B76C30
+        );
+
+    border:1px solid rgba(212,178,106,.22);
+
+    color:#FFF4E2;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    letter-spacing:.4px;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
 }
 
 .button:hover{
-    background:#8A2BE2;
+    transform:translateY(-3px);
+
+    background:
+        linear-gradient(
+            90deg,
+            #A45C32,
+            #D4A45C
+        );
+
+    box-shadow:
+        0 0 28px rgba(183,108,48,.22);
+}
+
+/* ----------------------- */
+/* TABLET */
+/* ----------------------- */
+
+@media(max-width:900px){
+
+    .grid{
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0,1fr)
+            );
+    }
+
+    .card:first-child{
+        grid-column:1/-1;
+    }
+
+}
+
+/* ----------------------- */
+/* MÓVIL */
+/* ----------------------- */
+
+@media(max-width:600px){
+
+    .registration{
+        padding:90px 20px;
+    }
+
+    .container h2{
+        font-size:2.3rem;
+    }
+
+    .description{
+        font-size:.95rem;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+
+        margin-top:45px;
+
+        gap:20px;
+    }
+
+    .card:first-child{
+        grid-column:auto;
+    }
+
+    .card{
+        min-height:240px;
+
+        padding:30px 24px;
+
+        border-radius:20px;
+    }
+
+    .card h3{
+        font-size:1.3rem;
+    }
+
 }

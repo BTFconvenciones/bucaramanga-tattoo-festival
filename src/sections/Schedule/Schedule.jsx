@@ -1,71 +1,59 @@
 import styles from "./Schedule.module.css";
 
-const schedule = [
-  {
-    day: "21 AGO",
-    title: "Inauguración",
-    description: "Apertura oficial, escenario principal y primeras actividades."
-  },
-  {
-    day: "22 AGO",
-    title: "Competencias",
-    description: "Cosplay, videojuegos, TCG, K-Pop y actividades especiales."
-  },
-  {
-    day: "23 AGO",
-    title: "Gran Final",
-    description: "Finales, premiaciones y cierre oficial del Bucara GeekFest."
-  }
-];
 
 function Schedule() {
-  return (
-    <section className={styles.schedule} id="agenda">
 
-      <div className={styles.container}>
+    return (
 
-        <span className={styles.badge}>
-          Agenda
-        </span>
+        <section
+            className={styles.schedule}
+            id="agenda"
+        >
 
-        <h2>Cronograma del Evento</h2>
+            <div className={styles.container}>
 
-        <p>
-          Tres días llenos de cultura geek, videojuegos,
-          anime, cosplay, tecnología y entretenimiento.
-        </p>
+                <span className={styles.badge}>
+                    Agenda
+                </span>
 
-        <div className={styles.timeline}>
+                <h2>
+                    Cronograma del Festival
+                </h2>
 
-          {schedule.map((item, index) => (
+                <p className={styles.description}>
+                    Estamos preparando la programación oficial del
+                    Bucaramanga Tattoo Festival.
+                    Muy pronto podrás consultar horarios, actividades,
+                    artistas y experiencias de los tres días del festival.
+                </p>
 
-            <article
-              key={index}
-              className={styles.card}
-            >
+                <div className={styles.comingSoon}>
 
-              <div className={styles.day}>
-                {item.day}
-              </div>
+                    <div className={styles.icon}>
+                        📅
+                    </div>
 
-              <h3>
-                {item.title}
-              </h3>
+                    <span className={styles.label}>
+                        11 · 12 · 13 SEPTIEMBRE 2026
+                    </span>
 
-              <p>
-                {item.description}
-              </p>
+                    <h3>
+                        Próximamente
+                    </h3>
 
-            </article>
+                    <p>
+                        El cronograma oficial estará disponible
+                        muy pronto.
+                    </p>
 
-          ))}
+                </div>
 
-        </div>
+            </div>
 
-      </div>
+        </section>
 
-    </section>
-  );
+    );
+
 }
 
 export default Schedule;

@@ -6,6 +6,7 @@ import ExperienceCard from "./ExperienceCard";
 
 import SectionHeader from "@/components/ui/SectionHeader/SectionHeader";
 
+
 function Experience() {
 
     return (
@@ -19,8 +20,8 @@ function Experience() {
 
                 <SectionHeader
                     badge="Todo en un solo lugar"
-                    title="¿Qué encontrarás en el Bucara GeekFest?"
-                    description="Vive un fin de semana lleno de videojuegos, cultura geek, cosplay, K-Pop, invitados especiales, torneos, tiendas, artistas y experiencias para toda la familia."
+                    title="Vive la experiencia Tattoo"
+                    description="Tres días de arte, tatuaje y cultura en Bucaramanga, con artistas nacionales e internacionales, exhibidores, competencias, experiencias y una programación especial que conecta el mundo Tattoo con la cultura Geek."
                 />
 
                 <div className={styles.grid}>

@@ -1,14 +1,162 @@
+.guests{
+
+    position:relative;
+
+    padding:120px 20px;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(183,108,48,.07),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(212,178,106,.04),
+            transparent 35%
+        ),
+        #0C0A08;
+
+    overflow:hidden;
+
+}
+
+
+/* ========================= */
+/* CONTENEDOR */
+/* ========================= */
+
+.container{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+/* ========================= */
+/* ENCABEZADO */
+/* ========================= */
+
+.header{
+
+    max-width:850px;
+
+    margin:0 auto 65px;
+
+    text-align:center;
+
+}
+
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 22px;
+
+    border-radius:999px;
+
+    background:rgba(183,108,48,.10);
+
+    border:1px solid rgba(212,178,106,.30);
+
+    color:#D4B26A;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:24px;
+
+    box-shadow:
+        0 0 25px rgba(183,108,48,.06);
+
+}
+
+
+.container h2{
+
+    font-family:"Bebas Neue",sans-serif;
+
+    font-size:clamp(3rem,6vw,5.2rem);
+
+    line-height:1;
+
+    color:#F4E8D0;
+
+    margin:0 0 22px;
+
+}
+
+
+.description{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    color:#CFC3AE;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+}
+
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:24px;
+
+}
+
+
+/* ========================= */
+/* TARJETAS */
+/* ========================= */
+
 .card{
 
     overflow:hidden;
 
-    border-radius:24px;
+    border-radius:18px;
 
-    background:#0B1020;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(36,29,22,.92),
+            rgba(14,12,10,.96)
+        );
 
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(212,178,106,.18);
 
-    transition:.35s;
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
 
     display:flex;
 
@@ -20,15 +168,57 @@
 
 }
 
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent 20%,
+            rgba(212,178,106,.07),
+            transparent 80%
+        );
+
+    transform:translateX(-120%);
+
+    transition:transform .8s ease;
+
+    pointer-events:none;
+
+    z-index:2;
+
+}
+
+
+.card:hover::before{
+
+    transform:translateX(120%);
+
+}
+
+
 .card:hover{
 
     transform:translateY(-10px);
 
-    border-color:#00E5FF;
+    border-color:rgba(212,178,106,.55);
 
-    box-shadow:0 25px 50px rgba(0,229,255,.20);
+    box-shadow:
+        0 25px 50px rgba(0,0,0,.40),
+        0 0 30px rgba(212,178,106,.08);
 
 }
+
+
+/* ========================= */
+/* IMAGEN */
+/* ========================= */
 
 .image{
 
@@ -42,13 +232,16 @@
 
     object-position:center;
 
-    background:#070B14;
+    background:#0C0A08;
 
     padding:12px;
 
-    transition:transform .45s ease;
+    transition:
+        transform .45s ease,
+        filter .45s ease;
 
 }
+
 
 .card:hover .image{
 
@@ -56,17 +249,29 @@
 
 }
 
+
+/* ========================= */
+/* CONTENIDO */
+/* ========================= */
+
 .content{
+
+    position:relative;
+
+    z-index:3;
 
     padding:24px;
 
     text-align:center;
 
+    border-top:1px solid rgba(212,178,106,.10);
+
 }
+
 
 .content h3{
 
-    color:#FFF;
+    color:#F4E8D0;
 
     font-size:1.5rem;
 
@@ -76,17 +281,23 @@
 
 }
 
+
 .content span{
 
     display:block;
 
-    color:#00E5FF;
+    color:#D4B26A;
 
     margin-bottom:20px;
 
     font-weight:600;
 
 }
+
+
+/* ========================= */
+/* REDES SOCIALES */
+/* ========================= */
 
 .socials{
 
@@ -97,6 +308,7 @@
     gap:14px;
 
 }
+
 
 .socials a{
 
@@ -112,20 +324,131 @@
 
     align-items:center;
 
-    background:rgba(255,255,255,.06);
+    background:rgba(212,178,106,.07);
 
-    color:#00E5FF;
+    border:1px solid rgba(212,178,106,.16);
 
-    transition:.3s;
+    color:#D4B26A;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease,
+        border-color .3s ease;
 
 }
 
+
 .socials a:hover{
 
-    background:#00E5FF;
+    background:#D4B26A;
 
-    color:white;
+    border-color:#D4B26A;
+
+    color:#17130F;
 
     transform:translateY(-4px);
+
+}
+
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media(max-width:900px){
+
+    .grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:700px){
+
+    .guests{
+
+        padding:90px 20px;
+
+    }
+
+    .header{
+
+        margin-bottom:45px;
+
+    }
+
+    .grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .image{
+
+        height:400px;
+
+    }
+
+}
+
+
+/* ========================= */
+/* MOBILE PEQUEÑO */
+/* ========================= */
+
+@media(max-width:480px){
+
+    .guests{
+
+        padding:80px 16px;
+
+    }
+
+    .badge{
+
+        font-size:.75rem;
+
+        padding:9px 16px;
+
+    }
+
+    .container h2{
+
+        font-size:clamp(2.6rem,12vw,4rem);
+
+    }
+
+    .description{
+
+        font-size:.98rem;
+
+    }
+
+    .image{
+
+        height:360px;
+
+    }
+
+    .content{
+
+        padding:20px;
+
+    }
+
+    .content h3{
+
+        font-size:1.3rem;
+
+    }
 
 }

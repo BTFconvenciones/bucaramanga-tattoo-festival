@@ -4,7 +4,7 @@ import styles from "./HeroCountdown.module.css";
 
 function HeroCountdown() {
 
-    const eventDate = new Date("2026-08-21T09:00:00");
+    const eventDate = new Date("2026-09-11T09:00:00");
 
     const calculateTimeLeft = () => {
 
@@ -30,19 +30,29 @@ function HeroCountdown() {
 
         return {
 
-            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+            days: Math.floor(
+                difference / (1000 * 60 * 60 * 24)
+            ),
 
-            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+            hours: Math.floor(
+                (difference / (1000 * 60 * 60)) % 24
+            ),
 
-            minutes: Math.floor((difference / (1000 * 60)) % 60),
+            minutes: Math.floor(
+                (difference / (1000 * 60)) % 60
+            ),
 
-            seconds: Math.floor((difference / 1000) % 60)
+            seconds: Math.floor(
+                (difference / 1000) % 60
+            )
 
         };
 
     };
 
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+    const [timeLeft, setTimeLeft] = useState(
+        calculateTimeLeft()
+    );
 
     useEffect(() => {
 

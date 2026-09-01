@@ -1,6 +1,7 @@
 import styles from "./Tournaments.module.css";
 import tournaments from "../../data/tournaments";
 
+
 function Tournaments() {
 
     return (
@@ -13,17 +14,38 @@ function Tournaments() {
             <div className={styles.container}>
 
                 <span className={styles.badge}>
-                    Torneos Oficiales
+                    BGA TATTOO GEEK
                 </span>
 
+
                 <h2>
-                    ¿Estás listo para competir?
+                    Dos mundos. Una misma celebración.
                 </h2>
 
+
                 <p className={styles.description}>
-                    Inscríbete directamente en tu torneo favorito y asegura tu cupo
-                    antes de que se agoten.
+                    El Bucaramanga Tattoo Festival también se encuentra
+                    con la cultura Geek. Una programación especial que reúne
+                    gaming, cosplay y K-Pop para disfrutar en comunidad.
                 </p>
+
+
+                <div className={styles.intro}>
+
+                    <span>
+                        🖋️ TATTOO
+                    </span>
+
+                    <strong>
+                        ×
+                    </strong>
+
+                    <span>
+                        🎮 GEEK
+                    </span>
+
+                </div>
+
 
                 <div className={styles.grid}>
 
@@ -40,6 +62,7 @@ function Tournaments() {
                                     src={tournament.image}
                                     alt={tournament.title}
                                     className={styles.image}
+                                    loading="lazy"
                                 />
 
                                 <span className={styles.category}>
@@ -48,47 +71,61 @@ function Tournaments() {
 
                             </div>
 
+
                             <div className={styles.content}>
 
                                 <h3>
                                     {tournament.title}
                                 </h3>
 
+
                                 <p>
                                     {tournament.description}
                                 </p>
 
+
                                 <div className={styles.info}>
 
                                     <div>
-                                        <strong>🏆 Premio</strong>
-                                        <span>{tournament.prize}</span>
+
+                                        <strong>
+                                            🎮 Actividad
+                                        </strong>
+
+                                        <span>
+                                            {tournament.category}
+                                        </span>
+
                                     </div>
 
-                                    <div>
-                                        <strong>👥 Cupos</strong>
-                                        <span>{tournament.slots}</span>
-                                    </div>
 
                                     <div>
-                                        <strong>📅 Fecha</strong>
-                                        <span>{tournament.date}</span>
+
+                                        <strong>
+                                            📅 Fecha
+                                        </strong>
+
+                                        <span>
+                                            {tournament.date}
+                                        </span>
+
                                     </div>
 
                                 </div>
 
-                                <span className={styles.status}>
-                                    🟢 {tournament.status}
-                                </span>
 
-                                <a
-                                    href={tournament.register}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={styles.button}
-                                >
-                                    Inscribirme Ahora
-                                </a>
+                                {tournament.register && (
+
+                                    <a
+                                        href={tournament.register}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={styles.button}
+                                    >
+                                        Conocer más
+                                    </a>
+
+                                )}
 
                             </div>
 
@@ -105,5 +142,6 @@ function Tournaments() {
     );
 
 }
+
 
 export default Tournaments;

@@ -7,49 +7,47 @@ const stats = [
     icon: "👥",
   },
   {
-    number: "+50",
-    label: "Expositores",
-    icon: "🏪",
-  },
-  {
-    number: "+20",
-    label: "Torneos",
-    icon: "🏆",
-  },
-  {
     number: "3",
-    label: "Días",
+    label: "Días de festival",
     icon: "📅",
+  },
+  {
+    number: "ARTISTAS",
+    label: "Nacionales e internacionales",
+    icon: "🖋️",
+    compact: true,
+  },
+  {
+    number: "2026",
+    label: "Edición oficial",
+    icon: "🦋",
   },
 ];
 
 function HeroStats() {
   return (
     <div className={styles.stats}>
-
       {stats.map((stat, index) => (
+        <div key={index} className={styles.card}>
+          <span className={styles.icon}>{stat.icon}</span>
 
-        <div
-          key={index}
-          className={styles.card}
-        >
-
-          <span className={styles.icon}>
-            {stat.icon}
-          </span>
-
-          <span className={styles.number}>
+          <span
+            className={`${styles.number} ${
+              stat.compact ? styles.textNumber : ""
+            }`}
+          >
             {stat.number}
           </span>
 
-          <span className={styles.label}>
+          <span
+            className={`${styles.label} ${
+              stat.compact ? styles.compactLabel : ""
+            }`}
+          >
             {stat.label}
           </span>
-
         </div>
-
       ))}
-
     </div>
   );
 }

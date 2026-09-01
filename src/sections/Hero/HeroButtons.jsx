@@ -7,21 +7,17 @@ function HeroButtons() {
         <div className={styles.buttons}>
 
             <a
-                href="https://forms.gle/DiJSWe9DeNJE4Yxq7"
-                target="_blank"
-                rel="noreferrer"
+                href="#inscripciones"
                 className={styles.secondary}
             >
-                SER VIP
+                INSCRIPCIONES
             </a>
 
             <a
-                href="https://wa.me/573058144929"
-                target="_blank"
-                rel="noreferrer"
+                href="#contacto"
                 className={styles.secondary}
             >
-                WhatsApp
+                CONTACTO
             </a>
 
         </div>

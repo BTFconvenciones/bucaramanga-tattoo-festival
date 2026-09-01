@@ -1,40 +1,53 @@
 const footer = {
-  brand: "Bucara GeekFest Lv1",
 
-  slogan: "La experiencia geek más épica de Bucaramanga.",
+    brand: "Bucaramanga Tattoo Festival",
 
-  location: "Neomundo · Bucaramanga",
+    slogan:
+        "Arte, tatuaje y cultura se encuentran en Bucaramanga.",
 
-  dates: "21 · 22 · 23 de Agosto",
+    location:
+        "Neomundo · Bucaramanga",
 
-  email: "globalesportsbga@gmail.com",
+    dates:
+        "11 · 12 · 13 de Septiembre de 2026",
 
-  phone: "+57 3058144929",
+    email:
+        "globalesportsbga@gmail.com",
 
-  copyright: "© 2026 GlobaleSportsbga. Todos los derechos reservados.",
+    phone:
+        "+57 305 814 4929",
 
-  social: [
-    {
-      id: 1,
-      name: "Facebook",
-      url: "https://www.facebook.com/globalesportsbga/"
-    },
-    {
-      id: 2,
-      name: "Instagram",
-      url: "https://www.instagram.com/globalesports/"
-    },
-    {
-      id: 3,
-      name: "TikTok",
-      url: "#"
-    },
-    {
-      id: 4,
-      name: "YouTube",
-      url: "https://www.youtube.com/@globalesportsbga"
-    }
-  ]
+    copyright:
+        "© 2026 Bucaramanga Tattoo Festival. Todos los derechos reservados.",
+
+    social: [
+
+        {
+            id: 1,
+            name: "Facebook",
+            url: "https://www.facebook.com/globalesportsbga/"
+        },
+
+        {
+            id: 2,
+            name: "Instagram",
+            url: "https://www.instagram.com/globalesports/"
+        },
+
+        {
+            id: 3,
+            name: "TikTok",
+            url: null
+        },
+
+        {
+            id: 4,
+            name: "YouTube",
+            url: "https://www.youtube.com/@globalesportsbga"
+        }
+
+    ]
+
 };
 
 export default footer;
