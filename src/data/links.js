@@ -1,47 +1,93 @@
 const links = {
 
-  // ENTRADAS
-  tickets: "https://forms.gle/DiJSWe9DeNJE4Yxq7",
+    // =========================
+    // ENTRADAS
+    // =========================
 
-  // PASE VIP
-  vip: "https://forms.gle/DiJSWe9DeNJE4Yxq7",
+    tickets:
+        "https://wa.me/573224460107?text=Hola,%20vengo%20desde%20la%20página%20web%20del%20Bucaramanga%20Tattoo%20Festival%20y%20quiero%20información%20sobre%20las%20entradas.",
 
-  // EXPOSITORES
-  exhibitor:
-    "https://wa.me/573058144929?text=Hola,%20vengo%20desde%20la%20página%20web%20del%20Bucaramanga%20Tattoo%20Festival%20y%20quiero%20más%20información%20para%20ser%20expositor.",
 
-  // PATROCINADORES
-  sponsor:
-    "https://wa.me/573058144929?text=Hola,%20vengo%20desde%20la%20página%20web%20del%20Bucaramanga%20Tattoo%20Festival%20y%20quiero%20más%20información%20sobre%20patrocinio.",
+    // =========================
+    // PASE VIP
+    // =========================
+    // Se conserva la propiedad para evitar romper componentes antiguos.
+    // Actualmente no se está mostrando un botón VIP.
 
-  // BGA TATTOO GEEK / GAMING
-  tournaments: "https://forms.gle/DiJSWe9DeNJE4Yxq7",
+    vip: "",
 
-  // COSPLAY
-  cosplay: "https://forms.gle/528iHDF3h4q7pNDY9",
 
-  // K-POP
-  kpop: "https://forms.gle/528iHDF3h4q7pNDY9",
+    // =========================
+    // EXPOSITORES
+    // =========================
 
-  // TCG
-  tcg: "https://forms.gle/528iHDF3h4q7pNDY9",
+    exhibitor:
+        "https://wa.me/573023593056?text=Hola,%20vengo%20desde%20la%20página%20web%20del%20Bucaramanga%20Tattoo%20Festival%20y%20quiero%20información%20para%20ser%20expositor.",
 
-  // VOLUNTARIADO
-  volunteer: "https://forms.gle/528iHDF3h4q7pNDY9",
 
-  // PRENSA
-  press: "https://forms.gle/528iHDF3h4q7pNDY9",
+    // =========================
+    // PATROCINADORES
+    // =========================
 
-  // WHATSAPP GENERAL
-  whatsapp:
-    "https://wa.me/573058144929?text=Hola,%20vengo%20desde%20la%20página%20web%20del%20Bucaramanga%20Tattoo%20Festival%20y%20quiero%20más%20información.",
+    sponsor:
+        "https://wa.me/573023593056?text=Hola,%20vengo%20desde%20la%20página%20web%20del%20Bucaramanga%20Tattoo%20Festival%20y%20quiero%20información%20sobre%20patrocinio.",
 
-  // REDES
-  youtube: "https://youtube.com/@globalesportsbga",
 
-  instagram: "https://instagram.com/globalesports",
+    // =========================
+    // BGA TATTOO GEEK / INSCRIPCIONES
+    // =========================
 
-  facebook: "https://facebook.com/globalesportsbga"
+    tournaments:
+        "https://wa.me/573224460107?text=Hola,%20vengo%20desde%20la%20página%20web%20del%20Bucaramanga%20Tattoo%20Festival%20y%20quiero%20información%20sobre%20las%20inscripciones.",
+
+
+    cosplay:
+        "https://wa.me/573224460107?text=Hola,%20vengo%20desde%20la%20página%20web%20del%20Bucaramanga%20Tattoo%20Festival%20y%20quiero%20información%20sobre%20las%20inscripciones%20de%20Copa%20Cosplay.",
+
+
+    kpop:
+        "https://wa.me/573224460107?text=Hola,%20vengo%20desde%20la%20página%20web%20del%20Bucaramanga%20Tattoo%20Festival%20y%20quiero%20información%20sobre%20las%20inscripciones%20de%20K-Pop.",
+
+
+    // =========================
+    // OTROS
+    // =========================
+
+    tcg: "",
+
+    volunteer: "",
+
+    press: "",
+
+
+    // =========================
+    // INSCRIPCIONES GENERALES
+    // =========================
+
+    inscriptions:
+        "https://wa.me/573224460107?text=Hola,%20vengo%20desde%20la%20página%20web%20del%20Bucaramanga%20Tattoo%20Festival%20y%20quiero%20información%20sobre%20las%20inscripciones.",
+
+
+    // =========================
+    // WHATSAPP / CONTACTO GENERAL
+    // =========================
+
+    whatsapp:
+        "https://wa.me/573023593056?text=Hola,%20vengo%20desde%20la%20página%20web%20del%20Bucaramanga%20Tattoo%20Festival%20y%20quiero%20más%20información.",
+
+
+    // =========================
+    // REDES
+    // =========================
+
+    youtube:
+        "https://www.youtube.com/@btfconvenciones",
+
+    instagram:
+        "https://www.instagram.com/btf_convenciones/",
+
+    facebook:
+        "https://www.facebook.com/btfconvenciones"
 
 };
 

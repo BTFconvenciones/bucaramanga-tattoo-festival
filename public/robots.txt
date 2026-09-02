@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://bucara-geekfest-web.vercel.app/sitemap.xml
+Sitemap: https://alemanbtf.github.io/bucaramanga-tattoo-festival/sitemap.xml

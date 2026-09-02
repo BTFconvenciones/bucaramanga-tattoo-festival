@@ -12,40 +12,28 @@ function BannerCTA() {
             <div className={styles.content}>
 
                 <span className={styles.badge}>
-                    TORNEOS OFICIALES 2026
+                    BGA TATTOO GEEK
                 </span>
 
                 <h2>
                     ¿ESTÁS LISTO PARA
                     <br />
-                    DEMOSTRAR TU NIVEL?
+                    VIVIR LA EXPERIENCIA?
                 </h2>
 
                 <p>
-
-                    Más de 10 torneos,
-                    premios,
-                    invitados especiales
-                    y cientos de jugadores
-                    competirán durante
-                    Bucara GeekFest.
-
+                    Gaming, cosplay y K-Pop hacen parte
+                    de la programación BGA Tattoo Geek
+                    dentro del Bucaramanga Tattoo Festival.
                 </p>
 
                 <a
-
                     href={links.tournaments}
-
                     target="_blank"
-
                     rel="noopener noreferrer"
-
                     className={styles.button}
-
                 >
-
-                    🎮 INSCRIBIRME AHORA
-
+                    🎮 MÁS INFORMACIÓN
                 </a>
 
             </div>
