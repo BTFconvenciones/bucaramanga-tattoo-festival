@@ -11,7 +11,7 @@ function HeroBackground() {
         playsInline
       >
         <source
-          src="/assets/video/hero.mp4"
+          src="assets/video/hero.mp4"
           type="video/mp4"
         />
       </video>

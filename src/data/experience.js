@@ -5,7 +5,7 @@ const experience = [
         icon: "valorant",
         title: "Valorant",
         description: "Torneo de Valorant como parte de la programación BGA Tattoo Geek.",
-        image: "/assets/tournaments/valorant.webp"
+        image: "assets/tournaments/valorant.webp"
     },
 
     {
@@ -13,7 +13,7 @@ const experience = [
         icon: "fc26",
         title: "FC 26",
         description: "Torneo de FC 26 dentro de la programación BGA Tattoo Geek.",
-        image: "/assets/tournaments/fc26.webp"
+        image: "assets/tournaments/fc26.webp"
     },
 
     {
@@ -21,7 +21,7 @@ const experience = [
         icon: "halo",
         title: "Halo 2 · Consola",
         description: "Torneo de Halo 2 en consola dentro de la programación BGA Tattoo Geek.",
-        image: "/assets/tournaments/halo2.webp"
+        image: "assets/tournaments/halo2.webp"
     },
 
     {
@@ -29,7 +29,7 @@ const experience = [
         icon: "cosplay",
         title: "Copa Cosplay · Versión 2",
         description: "La segunda versión de la Copa Cosplay llega al Bucaramanga Tattoo Festival.",
-        image: "/assets/tournaments/cosplay.webp"
+        image: "assets/tournaments/cosplay.webp"
     },
 
     {
@@ -37,7 +37,7 @@ const experience = [
         icon: "kpop",
         title: "Presentaciones de K-Pop",
         description: "Presentaciones de K-Pop como parte de la programación BGA Tattoo Geek.",
-        image: "/assets/tournaments/kpop.webp"
+        image: "assets/tournaments/kpop.webp"
     }
 
 ];

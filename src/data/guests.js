@@ -4,7 +4,7 @@ const guests = [
         id: 1,
         name: "Baku",
         role: "Jurado · Tatuador",
-        image: "/assets/invitados/baku.jpg",
+        image: "assets/invitados/baku.jpg",
 
         social: {
             instagram: "",
@@ -19,7 +19,7 @@ const guests = [
         id: 2,
         name: "Crayola",
         role: "Jurado · Tatuador",
-        image: "/assets/invitados/crayola.jpg",
+        image: "assets/invitados/crayola.jpg",
 
         social: {
             instagram: "",
@@ -34,7 +34,7 @@ const guests = [
         id: 3,
         name: "Dan Tiuzo",
         role: "Jurado · Tatuador",
-        image: "/assets/invitados/dan-tiuzo.jpg",
+        image: "assets/invitados/dan-tiuzo.jpg",
 
         social: {
             instagram: "",
@@ -49,7 +49,7 @@ const guests = [
         id: 4,
         name: "Eduar Cardona",
         role: "Jurado · Tatuador",
-        image: "/assets/invitados/eduar-cardona.jpg",
+        image: "assets/invitados/eduar-cardona.jpg",
 
         social: {
             instagram: "",
@@ -64,7 +64,7 @@ const guests = [
         id: 5,
         name: "Malamorte",
         role: "Jurado · Tatuador",
-        image: "/assets/invitados/malamorte.jpg",
+        image: "assets/invitados/malamorte.jpg",
 
         social: {
             instagram: "",
@@ -79,7 +79,7 @@ const guests = [
         id: 6,
         name: "Shari Tattoo",
         role: "Jurado · Tatuadora",
-        image: "/assets/invitados/shari-tattoo.jpg",
+        image: "assets/invitados/shari-tattoo.jpg",
 
         social: {
             instagram: "",
@@ -94,7 +94,7 @@ const guests = [
         id: 7,
         name: "Yamid Castro",
         role: "Jurado · Tatuador",
-        image: "/assets/invitados/yamid-castro.jpg",
+        image: "assets/invitados/yamid-castro.jpg",
 
         social: {
             instagram: "",
@@ -109,7 +109,7 @@ const guests = [
         id: 8,
         name: "Yohan Vidal",
         role: "Jurado · Tatuador",
-        image: "/assets/invitados/yohan-vidal.jpg",
+        image: "assets/invitados/yohan-vidal.jpg",
 
         social: {
             instagram: "",
@@ -124,7 +124,7 @@ const guests = [
         id: 9,
         name: "Andres Marin",
         role: "Jurado · Tatuador",
-        image: "/assets/invitados/andres-marin.jpg",
+        image: "assets/invitados/andres-marin.jpg",
 
         social: {
             instagram: "",

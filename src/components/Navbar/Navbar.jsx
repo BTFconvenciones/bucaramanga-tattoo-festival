@@ -37,7 +37,7 @@ function Navbar() {
                 >
 
                     <img
-                        src="/assets/logo/tattoo-festival.png"
+                        src="assets/logo/tattoo-festival.png"
                         alt="Bucaramanga Tattoo Festival 2026"
                     />
 

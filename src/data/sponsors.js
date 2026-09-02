@@ -4,7 +4,7 @@ const sponsors = [
         id: 2,
         type: "sponsor",
         name: "Recurso 3",
-        image: "/assets/sponsors/Recurso 3.png",
+        image: "assets/sponsors/Recurso 3.png",
         link: ""
     },
 
@@ -12,7 +12,7 @@ const sponsors = [
         id: 3,
         type: "sponsor",
         name: "Recurso 4",
-        image: "/assets/sponsors/Recurso 4.png",
+        image: "assets/sponsors/Recurso 4.png",
         link: ""
     },
 
@@ -20,7 +20,7 @@ const sponsors = [
         id: 4,
         type: "sponsor",
         name: "Recurso 5",
-        image: "/assets/sponsors/Recurso 5.png",
+        image: "assets/sponsors/Recurso 5.png",
         link: ""
     },
 
@@ -28,7 +28,7 @@ const sponsors = [
         id: 5,
         type: "sponsor",
         name: "Recurso 6",
-        image: "/assets/sponsors/Recurso 6.png",
+        image: "assets/sponsors/Recurso 6.png",
         link: ""
     },
 
@@ -36,7 +36,7 @@ const sponsors = [
         id: 6,
         type: "sponsor",
         name: "Recurso 7",
-        image: "/assets/sponsors/Recurso 7.png",
+        image: "assets/sponsors/Recurso 7.png",
         link: ""
     },
 
@@ -44,7 +44,7 @@ const sponsors = [
         id: 7,
         type: "sponsor",
         name: "Recurso 8",
-        image: "/assets/sponsors/Recurso 8.png",
+        image: "assets/sponsors/Recurso 8.png",
         link: ""
     },
 
@@ -52,7 +52,7 @@ const sponsors = [
         id: 8,
         type: "sponsor",
         name: "Recurso 9",
-        image: "/assets/sponsors/Recurso 9.png",
+        image: "assets/sponsors/Recurso 9.png",
         link: ""
     },
 
@@ -60,7 +60,7 @@ const sponsors = [
         id: 9,
         type: "sponsor",
         name: "Recurso 10",
-        image: "/assets/sponsors/Recurso 10.png",
+        image: "assets/sponsors/Recurso 10.png",
         link: ""
     },
 
@@ -68,7 +68,7 @@ const sponsors = [
         id: 10,
         type: "sponsor",
         name: "Recurso 11",
-        image: "/assets/sponsors/Recurso 11.png",
+        image: "assets/sponsors/Recurso 11.png",
         link: ""
     },
 
@@ -76,7 +76,7 @@ const sponsors = [
         id: 11,
         type: "sponsor",
         name: "Recurso 12",
-        image: "/assets/sponsors/Recurso 12.png",
+        image: "assets/sponsors/Recurso 12.png",
         link: ""
     },
 
@@ -84,7 +84,7 @@ const sponsors = [
         id: 12,
         type: "sponsor",
         name: "Recurso 13",
-        image: "/assets/sponsors/Recurso 13.png",
+        image: "assets/sponsors/Recurso 13.png",
         link: ""
     },
 
@@ -92,7 +92,7 @@ const sponsors = [
         id: 13,
         type: "sponsor",
         name: "Recurso 14",
-        image: "/assets/sponsors/Recurso 14.png",
+        image: "assets/sponsors/Recurso 14.png",
         link: ""
     },
 
@@ -100,7 +100,7 @@ const sponsors = [
         id: 14,
         type: "sponsor",
         name: "Recurso 15",
-        image: "/assets/sponsors/Recurso 15.png",
+        image: "assets/sponsors/Recurso 15.png",
         link: ""
     },
 
@@ -108,7 +108,7 @@ const sponsors = [
         id: 15,
         type: "sponsor",
         name: "Recurso 16",
-        image: "/assets/sponsors/Recurso 16.png",
+        image: "assets/sponsors/Recurso 16.png",
         link: ""
     },
 
@@ -116,7 +116,7 @@ const sponsors = [
         id: 16,
         type: "sponsor",
         name: "Recurso 17",
-        image: "/assets/sponsors/Recurso 17.png",
+        image: "assets/sponsors/Recurso 17.png",
         link: ""
     },
 
@@ -124,7 +124,7 @@ const sponsors = [
         id: 17,
         type: "sponsor",
         name: "Recurso 21",
-        image: "/assets/sponsors/Recurso 21.png",
+        image: "assets/sponsors/Recurso 21.png",
         link: ""
     },
 
@@ -132,7 +132,7 @@ const sponsors = [
         id: 18,
         type: "sponsor",
         name: "Recurso 22",
-        image: "/assets/sponsors/Recurso 22.png",
+        image: "assets/sponsors/Recurso 22.png",
         link: ""
     },
 
@@ -140,7 +140,7 @@ const sponsors = [
         id: 19,
         type: "sponsor",
         name: "Recurso 23",
-        image: "/assets/sponsors/Recurso 23.png",
+        image: "assets/sponsors/Recurso 23.png",
         link: ""
     },
 
@@ -148,7 +148,7 @@ const sponsors = [
         id: 20,
         type: "sponsor",
         name: "Recurso 24",
-        image: "/assets/sponsors/Recurso 24.png",
+        image: "assets/sponsors/Recurso 24.png",
         link: ""
     },
 
@@ -156,7 +156,7 @@ const sponsors = [
         id: 21,
         type: "sponsor",
         name: "Recurso 25",
-        image: "/assets/sponsors/Recurso 25.png",
+        image: "assets/sponsors/Recurso 25.png",
         link: ""
     },
 
@@ -164,7 +164,7 @@ const sponsors = [
         id: 22,
         type: "sponsor",
         name: "Recurso 26",
-        image: "/assets/sponsors/Recurso 26.png",
+        image: "assets/sponsors/Recurso 26.png",
         link: ""
     },
 
@@ -172,7 +172,7 @@ const sponsors = [
         id: 23,
         type: "sponsor",
         name: "Recurso 27",
-        image: "/assets/sponsors/Recurso 27.png",
+        image: "assets/sponsors/Recurso 27.png",
         link: ""
     },
 
@@ -180,7 +180,7 @@ const sponsors = [
         id: 24,
         type: "sponsor",
         name: "Recurso 28",
-        image: "/assets/sponsors/Recurso 28.png",
+        image: "assets/sponsors/Recurso 28.png",
         link: ""
     },
 
@@ -188,7 +188,7 @@ const sponsors = [
         id: 25,
         type: "sponsor",
         name: "Recurso 29",
-        image: "/assets/sponsors/Recurso 29.png",
+        image: "assets/sponsors/Recurso 29.png",
         link: ""
     },
 
@@ -196,7 +196,7 @@ const sponsors = [
         id: 26,
         type: "sponsor",
         name: "Recurso 30",
-        image: "/assets/sponsors/Recurso 30.png",
+        image: "assets/sponsors/Recurso 30.png",
         link: ""
     }
 
