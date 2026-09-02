@@ -1,25 +1,25 @@
 const site = {
-  eventName: "Bucara GeekFest",
-  edition: "2026",
-  city: "Bucaramanga",
-  venue: "Neomundo",
+    eventName: "Bucaramanga Tattoo Festival",
+    edition: "2026",
+    city: "Bucaramanga",
+    venue: "Neomundo",
 
-  hero: {
-    badge: "🚀 2026 · Bucaramanga · Neomundo",
+    hero: {
+        badge: "🖋️ 2026 · Bucaramanga · Neomundo",
 
-    title: "La experiencia geek más grande",
+        title: "Bucaramanga Tattoo Festival",
 
-    highlight: "del Nororiente Colombiano",
+        highlight: "Arte, tatuaje y cultura",
 
-    description:
-      "Videojuegos, cosplay, anime, K-Pop, TCG, invitados especiales, tecnología, torneos y una experiencia diseñada para toda la comunidad geek.",
+        description:
+            "Tres días de arte, tatuaje y cultura alternativa, con artistas nacionales e internacionales, competencia, expositores y una programación especial BGA Tattoo Geek.",
 
-    primaryButton: "Comprar Entradas",
+        primaryButton: "Comprar Entradas",
 
-    secondaryButton: "Explorar Evento",
+        secondaryButton: "Conoce el Festival",
 
-    smallText: "26 • 27 • 28 Septiembre 2026"
-  }
+        smallText: "11 • 12 • 13 Septiembre 2026"
+    }
 };
 
 export default site;

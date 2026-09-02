@@ -1,67 +1,43 @@
 const experience = [
 
     {
-        id:1,
-        icon:"videogames",
-        title:"Videojuegos",
-        description:"Consolas, PC Gaming, Free Play, Realidad Virtual y torneos para todos los niveles.",
-        image:"/assets/experience/videojuegos.jpg"
+        id: 1,
+        icon: "valorant",
+        title: "Valorant",
+        description: "Torneo de Valorant como parte de la programación BGA Tattoo Geek.",
+        image: "/assets/tournaments/valorant.webp"
     },
 
     {
-        id:2,
-        icon:"cosplay",
-        title:"Cosplay",
-        description:"Concursos, pasarela, invitados especiales y los mejores cosplayers del país.",
-        image:"/assets/experience/cosplay.jpg"
+        id: 2,
+        icon: "fc26",
+        title: "FC 26",
+        description: "Torneo de FC 26 dentro de la programación BGA Tattoo Geek.",
+        image: "/assets/tournaments/fc26.webp"
     },
 
     {
-        id:3,
-        icon:"kpop",
-        title:"K-Pop",
-        description:"Dance Cover, competencias, Random Play Dance y shows durante todo el evento.",
-        image:"/assets/experience/kpop.jpg"
+        id: 3,
+        icon: "halo",
+        title: "Halo 2 · Consola",
+        description: "Torneo de Halo 2 en consola dentro de la programación BGA Tattoo Geek.",
+        image: "/assets/tournaments/halo2.webp"
     },
 
     {
-        id:4,
-        icon:"tcg",
-        title:"TCG",
-        description:"Pokémon, One Piece, Yu-Gi-Oh!, Lorcana y muchos juegos de cartas coleccionables.",
-        image:"/assets/experience/tcg.jpg"
+        id: 4,
+        icon: "cosplay",
+        title: "Copa Cosplay · Versión 2",
+        description: "La segunda versión de la Copa Cosplay llega al Bucaramanga Tattoo Festival.",
+        image: "/assets/tournaments/cosplay.webp"
     },
 
     {
-        id:5,
-        icon:"exhibitors",
-        title:"Expositores",
-        description:"Tiendas, ilustradores, coleccionistas, emprendimientos y artículos exclusivos.",
-        image:"/assets/experience/expositores.jpg"
-    },
-
-    {
-        id:6,
-        icon:"family",
-        title:"Zona Familiar",
-        description:"Actividades para niños, familias y nuevos fanáticos de la cultura geek.",
-        image:"/assets/experience/familia.jpg"
-    },
-
-    {
-        id:7,
-        icon:"guests",
-        title:"Invitados",
-        description:"Creadores de contenido, actores de voz, cosplayers y artistas invitados.",
-        image:"/assets/experience/invitados.jpg"
-    },
-
-    {
-        id:8,
-        icon:"food",
-        title:"Food Court",
-        description:"Zona gastronómica con múltiples opciones para disfrutar durante todo el festival.",
-        image:"/assets/experience/food.jpg"
+        id: 5,
+        icon: "kpop",
+        title: "Presentaciones de K-Pop",
+        description: "Presentaciones de K-Pop como parte de la programación BGA Tattoo Geek.",
+        image: "/assets/tournaments/kpop.webp"
     }
 
 ];

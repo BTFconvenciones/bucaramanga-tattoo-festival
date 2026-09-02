@@ -1,33 +1,33 @@
 const event = {
-
-    name: "Bucara GeekFest lvl 1",
+    name: "Bucaramanga Tattoo Festival",
 
     edition: "2026",
 
-    slogan: "El evento geek más grande de Santander",
+    slogan: "Arte, tatuaje y cultura se encuentran en Bucaramanga.",
 
     city: "Bucaramanga",
 
     country: "Colombia",
 
-    startDate: "2026-08-21",
+    venue: "Neomundo",
 
-    endDate: "2026-08-23",
+    startDate: "2026-09-11",
 
-    schedule: "9:00 AM - 8:00 PM",
+    endDate: "2026-09-13",
+
+    schedule: "Próximamente",
 
     attendees: 5000,
 
-    exhibitors: 100,
+    exhibitors: null,
 
-    experiences: 30,
+    experiences: null,
 
     days: 3,
 
     whatsapp: "573058144929",
 
     tickets: "#"
-
 };
 
 export default event;

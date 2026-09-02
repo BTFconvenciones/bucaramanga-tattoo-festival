@@ -2,34 +2,34 @@ const sections = {
 
     experience: {
 
-        badge: "Todo en un solo lugar",
+        badge: "BGA Tattoo Geek",
 
-        title: "¿Qué encontrarás en el Bucara GeekFest?",
+        title: "Dos mundos. Una misma celebración.",
 
         description:
-            "Vive un fin de semana lleno de videojuegos, cultura geek, cosplay, K-Pop, invitados especiales, torneos, tiendas, artistas y experiencias para toda la familia."
+            "Una programación especial que une el mundo del Tattoo con la cultura Geek, reuniendo gaming, cosplay y K-Pop dentro del Bucaramanga Tattoo Festival."
 
     },
 
     guests: {
 
-        badge: "Invitados Especiales",
+        badge: "Jurados Oficiales",
 
-        title: "Conoce a nuestros invitados",
+        title: "Conoce a nuestros jurados",
 
         description:
-            "Cosplayers, artistas y creadores de contenido que harán del Bucara GeekFest una experiencia inolvidable."
+            "Tatuadores que harán parte del jurado oficial del Bucaramanga Tattoo Festival 2026."
 
     },
 
     tournaments: {
 
-        badge: "Competencias",
+        badge: "BGA Tattoo Geek",
 
-        title: "Participa en los Torneos",
+        title: "Vive la programación Geek",
 
         description:
-            "Compite, demuestra tus habilidades y gana increíbles premios."
+            "Gaming, cosplay y K-Pop se encuentran en una programación especial dentro del Bucaramanga Tattoo Festival."
 
     },
 
@@ -40,7 +40,7 @@ const sections = {
         title: "Nuestros Expositores",
 
         description:
-            "Tiendas, artistas y emprendimientos que harán parte del evento."
+            "Descubre estudios, marcas, artistas, emprendimientos y propuestas que harán parte del festival."
 
     },
 
@@ -48,10 +48,10 @@ const sections = {
 
         badge: "Aliados",
 
-        title: "Patrocinadores",
+        title: "Quienes hacen posible el festival",
 
         description:
-            "Empresas y marcas que hacen posible el Bucara GeekFest."
+            "Marcas, empresas y organizaciones que hacen parte del Bucaramanga Tattoo Festival 2026."
 
     },
 
@@ -62,7 +62,7 @@ const sections = {
         title: "¿Tienes dudas?",
 
         description:
-            "Aquí encontrarás respuestas a las preguntas más comunes."
+            "Resolvemos las dudas más comunes para que disfrutes al máximo tu experiencia en el Bucaramanga Tattoo Festival."
 
     }
 
